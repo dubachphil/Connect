@@ -1,0 +1,13 @@
+#cloud-config
+ssh_authorized_keys:
+  -  ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDMVveVccreRvzZt4610EzZq+GVn6XSDh1ye1htLymJAj4R582Oi7CGk0SZQFLfsvnAmfKhx4QvXgDs3+94MQCWA5mPNhzqgTennZ9hEtQt3eaAjhhfMElWCRrBNoXFJJaNLInjy9zpVi27HFhkNb+4pXN3uZCELlXg6x4sctvTMDwMSv6VHVsJekEhf3oRR3VRkPOR79aiCniDDdksVAA0k523jMjzakbXykgowp77aI0JI+F74BDOOTPNU7+Svi/s6GrX7+vpVHq0RPw+dA6/1EQnm1Q0rRI5aaCsbeJfjZT77QEd8M6i3X6UqZ3zdc3Ouh23Q14XQTHfsw94ITZ+G0QrhyPs3ZizRh+RHLvvI6hB/vdwd5TJcl8XZ8Iq2q5xDcVrSPC4KPnn7x6JshJYC37HXDK3dPM3Vs1TVSaT+qJ5wVqHKup4MzA2BoKrYGMcjG/tlGpvRgE5bAGYFyAcmBM9T8Q1OTFPLuonjk5oZQO34MF8OrI6gDe65bVNVTEvIWTkZ4bFvDuPN/xAsiB47FcTRdaHXZS1aQTaSFj8kBIdv9OxWgwHz58ZX6BaqrO/aeDUNGH8yHoJVqotLyEiJ4I4RmjHH44Hwp4L3gwbwp98hEPBuTqMaY8WMIDjEJ3aQEBM0QeRUteLT9HhBWnxYpwclXYoDR7ekUl5XYbWtQ== dubachphil@hotmail.com
+
+hostname: RancherOS.Slave02
+rancher:
+  network:
+    interfaces:
+      eth0:
+        address: 192.168.0.102/24
+        dhcp: false
+        gateway: 192.168.0.1
+        mtu: 1500
